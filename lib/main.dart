@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'buttonIcon.dart';
+import 'package:gradient_text/gradient_text.dart';
 
 void main() async {
   runApp(RGBremote());
@@ -12,6 +13,7 @@ class RGBremote extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           centerTitle: true,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -21,15 +23,19 @@ class RGBremote extends StatelessWidget {
                 height: 35,
                 width: 35,
               ),
-              Text(
+              GradientText(
                 "RaneGB Remote",
-                style: TextStyle(
-                  color: Colors.black,
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.red,
+                    Colors.green,
+                    Colors.blue,
+                  ],
                 ),
+                style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
           ),
-          backgroundColor: Colors.grey[100],
         ),
         body: Container(
           decoration: BoxDecoration(
