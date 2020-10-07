@@ -64,12 +64,12 @@ class RGBremote extends StatelessWidget {
                       foreColor: Colors.black,
                     ),
                     ButtonIcon(
-                      id: "brightness off",
+                      id: "off",
                       buttonColor: Colors.black,
                       buttonIcon: Icon(Icons.flash_off, size: 35),
                     ),
                     ButtonIcon(
-                      id: "brightness on",
+                      id: "on",
                       buttonColor: Colors.red,
                       buttonIcon: Icon(Icons.flash_on, size: 35),
                     ),
@@ -250,12 +250,14 @@ class RGBremote extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
+                          fontSize: 28,
                         ),
                       ),
                       Text(
                         'GILLIAN',
                         style: TextStyle(
                           color: Colors.black,
+                          fontSize: 28,
                         ),
                       )
                     ],
