@@ -11,18 +11,25 @@ class RGBremote extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.lightGreen[100],
         appBar: AppBar(
           centerTitle: true,
-          title: Text("RaneGB Remote"),
-          flexibleSpace: Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: <Color>[Colors.red, Colors.blue, Colors.green]),
-            ),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'images/logo.png',
+                height: 35,
+                width: 35,
+              ),
+              Text(
+                "RaneGB Remote",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
+            ],
           ),
+          backgroundColor: Colors.grey[100],
         ),
         body: Container(
           decoration: BoxDecoration(
